@@ -1,6 +1,7 @@
 body{
     font-family:"Playfair Display", serif;
-    background-color: #332a20;
+    
+    background-color: #7c7267;
     color: #69b2d1;
 }
 
@@ -14,14 +15,10 @@ header {
 }
 
 #hero{
-    background-color: #7c7267;
+    background-color: #332a20;
     text-align: center;
 }
 
 #hero img{
     width:20%;
-}
-
-#hero text{
-    font-size: 30pt;
 }
