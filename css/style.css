@@ -23,3 +23,8 @@ header {
 #hero img{
     width:20%;
 }
+
+#bio{
+    text-align: center;
+    font-weight: bold;
+}
