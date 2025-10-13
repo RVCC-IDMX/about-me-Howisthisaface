@@ -21,3 +21,7 @@ header {
 #hero img{
     width:20%;
 }
+
+#hero text{
+    font-size: 20pt;
+}
