@@ -24,7 +24,9 @@ header {
     text-align: center;
     font-weight: bold;
 }
+#hobbies{
+    text-align: center;
+}
 #hobbies ul li:nth-child(even){
     color: rgb(151, 218, 230);
-    text-align: center;
 }
