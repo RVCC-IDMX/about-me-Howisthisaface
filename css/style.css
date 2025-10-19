@@ -48,3 +48,10 @@ header {
 #gallery{
     border: 2px solid #d19d60;
 }
+#gallery img{
+    max-width: 100%;
+    align-items: center;
+}
+#gallery figure{
+    text-align: center;
+}
