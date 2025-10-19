@@ -37,7 +37,7 @@ header {
 /* Hobbies Section */
 
 #hobbies figure{
-    box-align: center;
+    align-content: center;
 }
 #hobbies ul li:nth-child(even){
     color: rgb(151, 218, 230);
@@ -54,4 +54,9 @@ header {
 }
 #gallery figure{
     text-align: center;
+}
+
+#lit{
+    text-align: left;
+    font-style: oblique;
 }
