@@ -94,6 +94,16 @@ section#hobbies{
     .container{
         padding: 0.2em;
     }
+
+    #video{
+    font-family:"Playfair Display", serif;
+    }
+    #myVideo{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        aspect-ratio: 1/1 auto;
+    }
 }
 
 figure img{
@@ -135,4 +145,23 @@ figure img{
     figure{
         display: block;
     }
+
+    #video{
+    font-family:"Playfair Display", serif;
+    }
+    #myVideo{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        aspect-ratio: 1/1 auto;
+    }
+}
+#video{
+    font-family:"Playfair Display", serif;
+}
+#myVideo{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    aspect-ratio: 1/1 auto;
 }
