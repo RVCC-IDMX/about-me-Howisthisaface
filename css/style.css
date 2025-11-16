@@ -165,3 +165,54 @@ figure img{
     grid-template-columns: 1fr 1fr;
     aspect-ratio: 1/1 auto;
 }
+
+/* Contact form*/
+
+#formElements{
+    display: grid;
+    row-gap: .5em;
+    font-family: 'BBH Sans Bartle';
+    color: #d19d60;
+}
+
+#contact{
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+
+}
+
+fieldset{
+    border: 2px solid;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+legend{
+    background-color: #d19d60;
+    color: #332a20;
+    padding: .5em;
+}
+
+#contact input, #contact textarea, #contact select, #contact button{
+    padding: .5em;
+    font-size: 1rem;
+}
+
+#contact ul{
+    list-style: none;
+    padding: 0px;
+}
+
+#contact li{
+    margin: 1rem;
+}
+
+#contact button{
+    background-color: #d19d60;
+    color: #332a20;
+    border: 1px solid #414d52;
+    max-width: 400px;
+    width: 50%;
+    justify-self: center;
+}

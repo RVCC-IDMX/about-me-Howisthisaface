@@ -18,8 +18,10 @@
         <h1>Web Dev 1</h1>
     </header>
     <main>
+        <!--Personal-->
         <section id="hero">
             <img src="img/avataaars.png" alt="avartar image of me">
+            <!--Name/location-->
             <div>
                 <p>Zachary Robinson</p>
                 <p>Clinton, NJ</p>
@@ -40,6 +42,7 @@
         </section>  
 
         <section id="hobbies">
+            <!--Things I enjoy-->
             <h2>Hobbies</h2>
             
             <ul>
@@ -50,6 +53,7 @@
         </section>
 
         <section id="gallery">
+            <!--Photos-->
             <h2> Photo Gallery</h2>
             <hr>
             <figure>
@@ -69,6 +73,7 @@
         </section>
 
         <article id="lit">
+            <!--Lit-->
             <h2>An excerpt from Bram Stoker's Dracula</h2>
             <div>
                 <p>The morning of 16 May broke bright and cheerful. The sun shone warm and brilliant, and the birds sang sweetly in the trees. The very air seemed full of hope and happiness. I felt that the cloud of gloom which had been hanging over us for so long was lifting, and that we were about to enter upon a new phase of our strange and terrible experience.</p>
@@ -80,9 +85,65 @@
         </article>
 
         <section id="video">
-                <h2>A short video</h2>
+            <!--Video-->
+            <h2>A short video</h2>
 
-                <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/N-CJN7t62Sg?si=ObmB6guEXmlLoLf9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/N-CJN7t62Sg?si=ObmB6guEXmlLoLf9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm" name="contactForm" method="post" data-netlify="true">
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <div id="formElements">
+                        <!--Name-->
+                        <lable for="name">Name (required)</lable>
+                        <input type="text" id="name" name="name" required>
+                        <!--Email-->
+                        <lable for="email">Email (required)</lable>
+                        <input type="email" id="email" name="email" required> 
+                        <!--Phone-->
+                        <lable for="phone">Phone (optional)</lable>
+                        <input type="tel" id="phone" name="phone"> 
+                        <!--Phone type-->
+                        <lable for="phonetype">Phone type (optional)</lable>
+                        <select id="phonetype" name="phonetype">
+                            <option value="" selected>Select phone type</option>
+                            <option value="Mobile">Mobile</option>
+                            <option value="Work">Work</option>
+                            <option value="Home">Home</option>
+                        </select>
+                        <!--Comment-->
+                        <lable for="message">Message (optional)</lable>
+                        <textarea id="message" name="message" rows="8">Comment!</textarea>
+
+                        <!--Checkbox-->
+                        <fieldset>
+                            <legend>Would you like a reply?</legend>
+
+                            <ul>
+                                <li>
+                                    <input type="radio" id="message-yes" name="reply" value="Yes">
+                                    <label for="message-yes">Yes, a reply would be nice.</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="message-no" name="reply" value="No">
+                                    <label for="message-no">No, thanks.</label>
+                                </li>
+                            </ul>
+
+                            <!--Submit-->
+                            <button type="submit">Send</button>
+
+                        </fieldset>
+
+                    </div>
+                </fieldset>
+
+            </form>
 
         </section>
 
