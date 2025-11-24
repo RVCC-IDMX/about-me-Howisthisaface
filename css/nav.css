@@ -74,7 +74,12 @@ margin-bottom: 1rem;
     display: inline-block;
 }
 
-
+.navbar-links a:hover, .navbar-links a:focus {
+    color: #332a20;
+    background-color: #69b2d1;
+    border-radius: 10px;
+    outline: none;
+}
 
 /* 
 media query for non-mobile nav bar
