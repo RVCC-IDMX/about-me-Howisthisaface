@@ -51,13 +51,28 @@ margin-bottom: 1rem;
 
 /* navigation list */
 
+.navbar-links li {
+    list-style: none;
+    display: block;
+    padding: 0.5em 0;
+}
+
+
 
 /*  
  style all a tags in header 
  and then on hover
 */
 
-
+.navbar-links a {
+    color: #69b2d1;
+    background-color: #332a20;
+    font-size: 1.5rem;
+    padding: .6rem .75rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+}
 
 
 
