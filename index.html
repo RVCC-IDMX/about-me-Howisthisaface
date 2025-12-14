@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AboutMe</title>
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
 <link href="css/style.css" rel="stylesheet">
 <link href="css/nav.css" rel="stylesheet">
@@ -15,19 +16,21 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+
             <div class="logo">
-                <img src="img/logo-96X96.svg" alt="blue origami bird logo"> 
+                <img src="img/favicon-96x96.png" alt="my new logo"> 
                 <h1>Web Dev 1</h1>
             </div>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="#bio">Bio</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#lit">Blog</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
+        <nav id="navbar" class="navbar">
+            <input id="navbar-links" type="checkbox">          
+            <aside class="navbar-links">
+                    <ul>
+                        <li><a class="menu-item" href="#bio">Bio</a></li>
+                        <li><a class="menu-item" href="#gallery">Gallery</a></li>
+                        <li><a class="menu-item" href="#lit">Blog</a></li>
+                        <li><a class="menu-item" href="#contact">Contact Me</a></li>
+                    </ul>
+            </aside>
         </nav>
     </header>
     <main>
@@ -46,12 +49,24 @@
 
             <div>
                 <p> I want to be... </p>
-                <p> Able to work from home.</p>
+                <p> Able to work from home, and have a rewarding career in a field I find interesting.</p>
+                <P> Able to move abroad within a few years to see more of the world and experience the culture of the country I want to move to first hand.  </P>
+                <p> I have thought of several countries I have an interest in living in, Australia, Ireland, Canada, and many more.</p>
+                <P> After some serious consideration I have decided that France would be the best fit for the first place I would like to live in for an extended period.</P>
+                <P> I think the culture, the architecture, the environment, and the many historical locations are interesting.</P>
+                <P> The country is home to strong communities in the games and hobbies I have an interest in like: cars, Smash Bros, and Magic: the Gathering.</P>
+                <P> Traviling the world if I can, once I settle down abroad.</P>
                 <p> I Enjoy...</p>
-                <p> Watching the rain drinking coffee or tea.</p>
-                <p> Going for drives at night.</p>
-                <p>Now on Netlify!</p>
+                <p> Watching the rain drinking coffee or tea. With my favorite options being cold brew coffee, and lemon or ginger tea.</p>
+                <p> Going for drives at night. Especially if there is a light rain adding to the vibes of the drive alongside the music.</p>
+                <P> Looking at cars, their prices, and the kind of directions people take their personal builds in, and appreciating the creativity.</P>
+                <p> Looking for places to visit, and the kind of architecture in those locations I want to look out for.</p>                
+                <p> Playing videogames with friends, namely Super Smash Brothers Melee for the Nintendo GameCube.</p>
+                <P> Exploring towns and cities I have never been to before, finding interesting sights.</P>
             </div>
+            <figure>
+                <img src="img/11th Grade Portrait Fall 2013.jpg" alt="A photo of me from highschool.">
+            </figure>
         </section>  
 
         <section id="hobbies">
@@ -68,17 +83,14 @@
         <section id="gallery">
             <!--Photos-->
             <h2> Photo Gallery</h2>
-            <hr>
             <figure>
                 <img src="img/Miata-Robinson-640w.jpg.jpg" alt="1991 Mazda Miata sports car in red with the top down.">
                 <figcaption>A 1991 Mazda Miata in red with the top down.</figcaption>
             </figure>
-            <hr>
             <figure>
                 <img src="img/GCC-Robinson-640w.jpg.jpg" alt="A black Gamecube Controller.">
                 <figcaption>My Gamecube controller for playing Smashbrothers Melee (yes, the old one).</figcaption>    
             </figure>
-            <hr>
             <figure>
                 <img src="img/Keyboard-Robinson-640w.jpg.jpg" alt="A 65 percent layout keyboard in black with dark blue, gold and black keycaps.">
                 <figcaption>My keyboard that I modified.</figcaption>                
@@ -87,22 +99,40 @@
 
         <article id="lit">
             <!--Lit-->
-            <h2>An excerpt from Bram Stoker's Dracula</h2>
+            <h2>Blog</h2>
             <div>
-                <p>The morning of 16 May broke bright and cheerful. The sun shone warm and brilliant, and the birds sang sweetly in the trees. The very air seemed full of hope and happiness. I felt that the cloud of gloom which had been hanging over us for so long was lifting, and that we were about to enter upon a new phase of our strange and terrible experience.</p>
+                <p>Background-image property is the way a programmer sets images for backgrounds in an element. If an image or images are desired as a background the "background-image" property is used. Any backgroundimage will be aligned to the top-left corner of the element it is a part of, and the repeated vertically and horizontally by default.</p>
 
-                <p>I am beginning to feel this nocturnal existence tell on me. It is destroying my nerve. I start at my own shadow, and am full of all sorts of horrible imaginings. God knows that there is ground for my terrible fear in this accursed place! I looked out over the beautiful expanse, bathed in soft yellow moonlight till it was almost as light as day.</p>
+                <p>Applying the image requires that it be set up in the stylesheet, broken down by what part of the website you want the image to be under, with the most common being "body" as a means of placing the image either behind the text entirely or to put it behind the solid color element above it. This can also be used to just place photos as the background of a section such as the "hero" section.</p>
 
-                <p>How these papers have been placed in sequence will be made manifest in the reading of them. All needless matters have been eliminated, so that a history almost at variance with the possibilities of later-day belief may stand forth as simple fact. There is throughout no statement of past things wherein memory may err, for all the records chosen are exactly contemporary, given from the standpoints and within the range of knowledge of those who made them.</p>
+                <p>When building this in the stylesheet it is important that the stylesheet is in a CSS folder the the purpose of orginization, but because of its location you will need to add "../" at the start of the image to find the image under the image file. Often something like this looks like: "background-image: url(../Images/filler.jpeg);.</p>
+            
+                <p>It is best practice to always place a background color for the element so that if something would cause an issue with loading the image, the text would still be legible. An important part of this is finding a color for the text that allows it to contrast well with both the image and the color. This is important to help those with any type of color blindness, or to avoid the text being the same color as the background of the webpage. One way to help create easier contrast is to use “background-blend-mode” to mix the image with the background color behind it to change the look and feel of the image. This is another reason to have a background color set.</p>
+
+                <p>To adjust the sizing of the section with the background image, it is helpful to use padding because it will center the text better than using height and width as the method of spacing. Typically, the padding with be top and bottom. While it is possible to control everything from the background image by using just “background-image” in a style sheet, it might be best to break it down into multiple sections so any potential issues are easier to troubleshoot and resolve.</p>
+
+                <p>Stylistically, you can use the “background-repeat” property to choose if and how much it repeats, with patterns being better to repeat than most images. An important element of the styling of a photo is the sizing, and getting it to scale without repeating as you go up in screen size. Finding a balance of size can help prevent the image from repeating, or from being blurry as the size of the monitor scales up, as well as assisting with the optimization of the webpage as a whole. Larger images can cause issues with loading a page, and make scaling difficult. One way to do this is to use “background-size: cover;” to set the image to fit in the space, cropping the image to fit the section it is in, scaling as needed.</p>
+
+                <p>Another aspect of aligning a background image is to use “background-position” to move the image within the bounds of the element it is a part of. To move the image within the element you would first need padding, and them can use either units such as “25px” and “50%”, or make use of keywords like “bottom” and “top”. You can also combine the units and keywords to adjust exactly where the background image will appear. You can use “padding” for helping adjust the size of the element, and “margin” to separate and differentiate the element from others. Two or more images can be controlled in the same <div> by using a second set of modifiers after each “background” by adding a comma after the first “background-image”, and adjusting it how you want by adding additional units and keywords after the initial ones and a comma. I have provided some examples below.</p>
+
             </div>
         </article>
+            <div id="image-example-1">
+                <p>An example of a background image as a cover</p>
+            </div>
+            <div id="image-example-2">
+                <p></p>
+            </div>
+            <div id="image-example-3">
+                <p></p>
+            </div>
 
         <section id="video">
             <!--Video-->
             <h2>A short video</h2>
-
+            <div>
             <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/N-CJN7t62Sg?si=ObmB6guEXmlLoLf9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+            </div>
         </section>
 
         <section id="contact">

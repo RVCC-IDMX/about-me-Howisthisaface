@@ -1,6 +1,6 @@
 body{
     font-family:"Playfair Display", serif;
-    background-color: #414d52;
+    background-color: #332A20;
     color: #69b2d1;
 }
 
@@ -14,9 +14,88 @@ header {
     text-align: center;
 }
 
+/* navbar */
+:root{
+    --bar-width: 50px;
+    --bar-hight: 5px;
+    --navbar-gap: 5px;
+    --forground: #69B2D1;
+    --background: #332A20;
+    --animation-timing: 150ms ease-in-out;
+    --navbar-hight: calc(var(var(--bar-hight))* 3 + var(var(--navbar-gap)) * 2);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.navbar-links{
+    --x-width: calc(var(--bar-hight) * 1.41421356237);
+    padding: 2em;
+    gap: var(--hamurger-gap);
+    width: max-content;
+    height: var(--navbar-hight);
+    position: relative;
+    top: 8px;
+    left: 2px;
+    z-index: 2;
+    cursor: crosshair;
+
+}
+
+.navbar-links::before,
+.navbar-links::after,
+.navbar-links input{
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-hight);
+    background-color: var(--foreground);
+    border-radius: 85px;
+    box-shadow: 0 3px 6px #d19d60;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing), ;    
+}
+
+.navbar-links input{
+appearance: none;
+padding: 0;
+margin: 0;
+outline: none;
+pointer-events: none;
+}
+
+.navbar-links::before{
+    transform: translateY(-25px);
+}
+
+.navbar-links input::after{
+    transform: translateY(25px);
+}
+
+.navbar-links:has(input:checked)::before{
+    rotate: 40deg;
+    width: var(--x-width);
+}
+.navbar-links:has(input:checked)::after{
+    rotate: 40deg;
+    width: var(--x-width);
+}
+
+.navbar-links input:checked{
+    opacity: 50%;
+    width: 50%;
+}
+
+
 /* Hero Section*/
 
 #hero, footer{
+    margin: 5em;
+    padding: 10em;
     border: 4px solid #d19d60;
     background-color: #332a20;
     text-align: center;
@@ -29,29 +108,50 @@ header {
 /* Bio Section */
 
 #bio{
+    font-family: "Open Sans", sans-serif;
     text-align: center;
     font-weight: bold;
+}
+
+#bio figure{
+    margin: 2em;
+    border: 2px solid #d19d60;
+    padding: 1em;
+    background-color: #332A20;
+    background-image: url(../img/11th\ Grade\ Portrait\ Fall\ 2013.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: #69b2d1;
 }
 
 /* Hobbies Section */
 
 section#hobbies{
+    font-family: "Merriweather", serif;
     display: flex;
     flex-flow: column;
-    align-items: center;   
+    align-items: center;       
  }
 
 #hobbies figure{
     align-content: center;
 }
-#hobbies ul li:nth-child(even){
-    color: rgb(151, 218, 230);
+#hobbies ul li:nth-child(){
+    color: #332A20;
 }
 
 /* Gallery */
 
 #gallery{
+    margin: 2em;
     border: 2px solid #d19d60;
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
 #gallery img{
     max-width: 100%;
@@ -61,11 +161,11 @@ section#hobbies{
     text-align: center;
 }
 
-/* Dropcaps */
+/* Dropcaps
 
 #lit div p:first-child::first-letter{
     color: #69b2d1;
-    background-image: radial-gradient(#fff, #d19d60);
+    background-image: radial-gradient(#332A20, #d19d60);
     float: left;
     font-size: 3em;
     padding: 0.25em;
@@ -76,9 +176,9 @@ section#hobbies{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-top-left-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
-}
+}*/
 
-
+/* Small screen size */
 @media screen and (min-width: 50em){
     figure{
         display: grid;
@@ -110,6 +210,7 @@ figure img{
     width: 100%;
 }
 #lit{
+    font-family: "Open Sans", sans-serif;
     text-align: center;
     margin-bottom: 1rem;
     font-style: oblique;
@@ -120,7 +221,7 @@ figure img{
 }
 
 
-/* large screen size */
+/* Large screen size */
 
 @media screen and (min-width: 100em){
     #gallery h2{
@@ -158,11 +259,15 @@ figure img{
 }
 #video{
     font-family:"Playfair Display", serif;
+    display: grid;
+    justify-content: center;  
+    padding-top: 5em;
+    padding-bottom: 5em;  
 }
 #myVideo{
+
     display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     aspect-ratio: 1/1 auto;
 }
 
@@ -171,7 +276,7 @@ figure img{
 #formElements{
     display: grid;
     row-gap: .5em;
-    font-family: 'BBH Sans Bartle';
+    font-family: "Open Sans", sans-serif;
     color: #d19d60;
 }
 
@@ -215,4 +320,45 @@ legend{
     max-width: 400px;
     width: 50%;
     justify-self: center;
+}
+
+/* Showing images for an example */
+#image-example-1{
+    margin: 2em;
+    border: 2px solid #d19d60;
+    padding: 1em;
+    background-color: #332A20;
+    background-image: url(../img/Miata-Robinson-640w.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: #69b2d1;
+}
+#image-example-2{
+    margin: 2em;
+    border: 2px solid #d19d60;
+    padding: 5em;
+    background-color: #332A20;
+    background-image: url(../img/image-example-Robinson-640w.png);
+    background-repeat: no-repeat;
+    background-position: 50%;   
+    background-size: contain;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #69b2d1;
+}
+#image-example-3{
+    margin: 2em;
+    border: 2px solid #d19d60;
+    padding: 5em;
+    background-color: #332A20;
+    background-image: url(../img/second-example-Robinson-640w.png);
+    background-repeat: no-repeat;
+    background-position: 50%;   
+    background-size: contain;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
