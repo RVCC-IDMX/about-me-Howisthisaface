@@ -31,8 +31,6 @@ header {
     justify-content: space-between;
 }
 
-
-
 .navbar-links{
     --x-width: calc(var(--bar-hight) * 1.41421356237);
     padding: 2em;
@@ -178,6 +176,116 @@ section#hobbies{
     border-bottom-right-radius: 0.2em;
 }*/
 
+/* Showing images for an example */
+#image-example-1{
+    margin: 2em;
+    border: 2px solid #d19d60;
+    padding: 1em;
+    background-color: #332A20;
+    background-image: url(../img/Miata-Robinson-640w.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: #69b2d1;
+}
+#image-example-2{
+    margin: 2em;
+    border: 2px solid #d19d60;
+    padding: 5em;
+    background-color: #332A20;
+    background-image: url(../img/image-example-Robinson-640w.png);
+    background-repeat: no-repeat;
+    background-position: 50%;   
+    background-size: contain;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #69b2d1;
+}
+#image-example-3{
+    margin: 2em;
+    border: 2px solid #d19d60;
+    padding: 5em;
+    background-color: #332A20;
+    background-image: url(../img/second-example-Robinson-640w.png);
+    background-repeat: no-repeat;
+    background-position: 50%;   
+    background-size: contain;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* My video showing what I did on the midterm */
+#video{
+    font-family:"Playfair Display", serif;
+    display: grid;
+    justify-content: center;  
+    padding-top: 5em;
+    padding-bottom: 5em;  
+}
+#myVideo{
+
+    display: grid;
+    justify-content: center;
+    aspect-ratio: 1/1 auto;
+}
+
+/* Contact form*/
+
+#formElements{
+    display: grid;
+    row-gap: .5em;
+    font-family: "Open Sans", sans-serif;
+    color: #d19d60;
+}
+
+#contact{
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+
+}
+
+fieldset{
+    border: 2px solid;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+legend{
+    background-color: #d19d60;
+    color: #332a20;
+    padding: .5em;
+}
+
+#contact input, #contact textarea, #contact select, #contact button{
+    padding: .5em;
+    font-size: 1rem;
+}
+
+#contact ul{
+    list-style: none;
+    padding: 0px;
+}
+
+#contact li{
+    margin: 1rem;
+}
+
+#contact button{
+    background-color: #d19d60;
+    color: #332a20;
+    border: 1px solid #414d52;
+    max-width: 400px;
+    width: 50%;
+    justify-self: center;
+}
+
+
+
+
 /* Small screen size */
 @media screen and (min-width: 50em){
     figure{
@@ -256,109 +364,4 @@ figure img{
         grid-template-columns: 1fr 1fr;
         aspect-ratio: 1/1 auto;
     }
-}
-#video{
-    font-family:"Playfair Display", serif;
-    display: grid;
-    justify-content: center;  
-    padding-top: 5em;
-    padding-bottom: 5em;  
-}
-#myVideo{
-
-    display: grid;
-    justify-content: center;
-    aspect-ratio: 1/1 auto;
-}
-
-/* Contact form*/
-
-#formElements{
-    display: grid;
-    row-gap: .5em;
-    font-family: "Open Sans", sans-serif;
-    color: #d19d60;
-}
-
-#contact{
-    padding: 1rem;
-    max-width: 600px;
-    margin: 2rem auto;
-
-}
-
-fieldset{
-    border: 2px solid;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-legend{
-    background-color: #d19d60;
-    color: #332a20;
-    padding: .5em;
-}
-
-#contact input, #contact textarea, #contact select, #contact button{
-    padding: .5em;
-    font-size: 1rem;
-}
-
-#contact ul{
-    list-style: none;
-    padding: 0px;
-}
-
-#contact li{
-    margin: 1rem;
-}
-
-#contact button{
-    background-color: #d19d60;
-    color: #332a20;
-    border: 1px solid #414d52;
-    max-width: 400px;
-    width: 50%;
-    justify-self: center;
-}
-
-/* Showing images for an example */
-#image-example-1{
-    margin: 2em;
-    border: 2px solid #d19d60;
-    padding: 1em;
-    background-color: #332A20;
-    background-image: url(../img/Miata-Robinson-640w.jpg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    color: #69b2d1;
-}
-#image-example-2{
-    margin: 2em;
-    border: 2px solid #d19d60;
-    padding: 5em;
-    background-color: #332A20;
-    background-image: url(../img/image-example-Robinson-640w.png);
-    background-repeat: no-repeat;
-    background-position: 50%;   
-    background-size: contain;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    color: #69b2d1;
-}
-#image-example-3{
-    margin: 2em;
-    border: 2px solid #d19d60;
-    padding: 5em;
-    background-color: #332A20;
-    background-image: url(../img/second-example-Robinson-640w.png);
-    background-repeat: no-repeat;
-    background-position: 50%;   
-    background-size: contain;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
