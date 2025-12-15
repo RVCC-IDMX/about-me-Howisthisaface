@@ -8,7 +8,7 @@ This is a webpage built throughout the semester. It shows some of my interests, 
 
 this program uses a color scheme consisting of rgba(209, 157, 96, 1) or #D19D60, rgba(109, 134, 145, 1) or #6D8691, rgba(105, 178, 209, 1) or #69B2D1, rgba(124, 114, 103, 1) or #7C7267, rgba(65, 77, 82, 1) or #414D52, and rgba(51, 42, 32, 1) or #332A20.
 
-At the top of my page, I have the logo that I made with my initials, though for some reason I couldn’t get rid of the white bar at the bottom using the software we used in class. Along with this I have the name of the class and the navbar.
+At the top of my page, I have the logo that I made with my initials, though for some reason I couldn’t get rid of the white bar at the bottom using the software we used in class. Along with this I have the name of the class and the navbar. Unfortunitly, I couldn't get the hamburger styling to work correctly. I tried following the videos given first and didn't get the results shown, so I tried looking for some other explination videos and still couldn't figure out where I had gone wrong.
 
 I then have my introduction and bio sections. The introduction section as my avatar, name and where I live. The bio section goes more in depth about the things I want to do and that interest me, along with a photo of myself from high school.
 
@@ -16,7 +16,7 @@ The hobbies section has images that can represent some of my hobbies and interes
 
 In the blog section, formerly lit, I have written about the “background-image” property that I researched. I tried to explain how it is used and the specifics of setting it up in a website like this one. Along with this I have examples where I tried to show both, what this property looks like in action and what the back-end code looks like to get that result.
 
-There is a short video showing what I did for the midterm.
+There is a short video showing what I did for the midterm. 
 
 I also have a contact form for those that wish to get ahold of me or leave questions or concerns. 
 

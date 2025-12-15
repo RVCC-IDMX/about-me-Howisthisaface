@@ -26,9 +26,10 @@ header {
 }
 
 .navbar{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .navbar-links{
@@ -41,8 +42,6 @@ header {
     top: 8px;
     left: 2px;
     z-index: 2;
-    cursor: crosshair;
-
 }
 
 .navbar-links::before,
@@ -59,11 +58,11 @@ header {
 }
 
 .navbar-links input{
-appearance: none;
-padding: 0;
-margin: 0;
-outline: none;
-pointer-events: none;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
 }
 
 .navbar-links::before{
@@ -150,6 +149,7 @@ section#hobbies{
     display: grid;
     justify-content: center;
     text-align: center;
+    cursor: grab;
 }
 #gallery img{
     max-width: 100%;
